@@ -7,32 +7,33 @@ When we start learning TypeScript, we will often see both type and interface. Th
 ## Detailed Explanation
 
 Here is a simple interface for a user:
+```ts
 interface User {
   id: number;
   name: string;
 }
-
+```
 This tells TypeScript that a User object must have an ID and a name. We can build on an interface with extends:
-
+```ts
 interface Admin extends User {
   role: string;
 }
-
+```
 A type alias can describe the same object:
-
+```ts
 type User = {
   id: number;
   name: string;
 };
-
+```
 However, type can also describe values that are not just objects. For example, a union lets a variable hold one of several possible values:
-
+```ts
 type Status = "loading" | "success" | "error";
-
+```
 We can also combine types with an intersection (&):
-
+```ts
 type Admin = User & { role: string };
-
+```
 One special feature of interfaces is that TypeScript can merge two declarations with the same name. Type aliases cannot be reopened this way.
 
 ## Conclusion

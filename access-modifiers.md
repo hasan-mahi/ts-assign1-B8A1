@@ -12,6 +12,7 @@ private means a member can only be used inside the class where it is declared. T
 
 readonly means a property can be given a value when it is declared or inside the constructor but it cannot be changed later. It is helpful for values that should stay the same, such as an account ID.
 
+```ts
 class Account {
   public owner: string;
   private balance: number;
@@ -32,9 +33,10 @@ class Account {
 
 class SavingsAccount extends Account {
   showBank(): string {
-    return this.bankName; // Allowed: protected member
+    return this.bankName;
   }
 }
+```
 
 Here, owner can be accessed from outside the class, but balance cannot. A child class can use bankName, while accountId cannot be reassigned after construction.
 
