@@ -1,10 +1,10 @@
-Type vs. Interface in TypeScript: What Is the Difference?
+# Type vs. Interface in TypeScript: What Is the Difference?
 
-Introduction
+## Introduction
 
 When we start learning TypeScript, we will often see both type and interface. They may look similar because both can describe the shape of an object. The main difference is that interface is mainly used to describe object structures, while type can give a name to many kinds of types.
 
-Detailed Explanation
+## Detailed Explanation
 
 Here is a simple interface for a user:
 interface User {
@@ -35,6 +35,6 @@ type Admin = User & { role: string };
 
 One special feature of interfaces is that TypeScript can merge two declarations with the same name. Type aliases cannot be reopened this way.
 
-Conclusion
+## Conclusion
 
 We use interface when describing an object that other parts of our program may extend. Choose type when we need unions, intersections, or other type combinations. Both are useful and either we can describe many object shapes, so consistency across our project also matters.

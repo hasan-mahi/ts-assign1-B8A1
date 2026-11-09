@@ -1,10 +1,10 @@
-Access Modifiers in TypeScript OOP
+# Access Modifiers in TypeScript OOP
 
-Introduction
+## Introduction
 
 When we write a class in TypeScript, we may not want every part of the class to be available to everyone. Access modifiers help control which parts of a class can be used from other code. The main modifiers are public, private, protected, and readonly.
 
-Detailed Explanation
+## Detailed Explanation
 
 public means a property or method can be used from anywhere. It is the default. So TypeScript assumes a class member is public when no modifier is written.
 
@@ -38,6 +38,6 @@ class SavingsAccount extends Account {
 
 Here, owner can be accessed from outside the class, but balance cannot. A child class can use bankName, while accountId cannot be reassigned after construction.
 
-Conclusion
+## Conclusion
 
 Access modifiers make classes easier to organize and protect from accidental changes. We use public for shared members, private for class-only details, protected for class and child-class access and readonly for values that should not change. These are TypeScript checks. They do not automatically provide runtime security in JavaScript.
