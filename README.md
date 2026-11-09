@@ -1,4 +1,4 @@
-# TypeScript Blog Assignment
+# TypeScript Assignment 1
 
 ## Assignment Overview
 
